@@ -1,0 +1,107 @@
+    <iframe>
+    <style>
+      .childhood_div {
+        padding:1%;
+        float: left; 
+        width: 33%;
+        border: 1px solid black;
+        background-color: "89CFF0";
+      }
+      .ch_text {
+        margin: auto;
+      }
+      .education_div {
+        padding:1%;
+        float: left; 
+        width: 33%;
+        border: 1px solid black;
+      }
+    </style>
+    </body>
+      <div>
+        <div class = "childhood_div">
+          <center>
+          <button class="childhood" id="childhood" onclick = "showChildhood()">Childhood</button>
+          </center>
+            <img src = "https://o.remove.bg/downloads/470e0e09-d340-46da-8d79-90a2c914ce02/download-removebg-preview.png" class = "ch_text" onclick = "removeCh()" width = 4%>
+          <center>
+            <h3 class = "ch_text" id = "ch_text">Childhood:</h1>
+            <br>
+            <p class="ch_text" id="ch_text">Katherine Johnson was born in White Sulphur Springs on August 26, 1918. She was born to Joylette Roberta and Joshua McKinley Coleman and was the youngest of 4 children. At a young age she enjoyed mathematics and could easily solve mathematical equations, and most of her childhood consisted of this.</p>
+          </center>
+        </div>
+        <div class = "education_div">
+          <center>
+            <button class="education" id="education" onclick = "showEducation()">Education</button>
+          </center>
+            <img src = "https://o.remove.bg/downloads/470e0e09-d340-46da-8d79-90a2c914ce02/download-removebg-preview.png" class = "ed_text" onclick = "removeEd()" width = 4%>
+          <center>
+            <h3 class = "ed_text" id = "ed_text">Education:</h1>
+            <br>
+            <p class="ed_text" id="ed_text">Katherine Johnson started high school when she was just 10 years old and college when she was 15, when she started taking classes to become a mathematician. Her college education was at West Virginia University and she graduated in 1937. </p>
+          </center>
+        </div>
+        <div class = "education_div">
+          <center>
+            <button class="education" id="education" onclick = "showEducation()">Education</button>
+          </center>
+            <img src = "https://o.remove.bg/downloads/470e0e09-d340-46da-8d79-90a2c914ce02/download-removebg-preview.png" class = "ed_text" onclick = "removeEd()" width = 4%>
+          <center>
+            <h3 class = "ed_text" id = "ed_text">Education:</h1>
+            <br>
+            <p class="ed_text" id="ed_text">Katherine Johnson started high school when she was just 10 years old and college when she was 15, when she started taking classes to become a mathematician. Her college education was at West Virginia University and she graduated in 1937. </p>
+          </center>
+        </div>
+      </div>
+      <script>
+        var childhoodDiv = document.getElementsByClassName("childhood_div")[0]
+        var educationDiv = document.getElementsByClassName("education_div")[0]
+        var childhoodButton = document.getElementById("childhood")
+        var childhoodImg = document.getElementsByClassName("ch_text")[0]
+        var childhoodHeader = document.getElementsByClassName("ch_text")[1]
+        var childhoodText = document.getElementsByClassName("ch_text")[2]
+        var educationButton = document.getElementById("education")
+        var educationImg = document.getElementsByClassName("ed_text")[0]
+        var educationHeader = document.getElementsByClassName("ed_text")[1]
+        var educationText = document.getElementsByClassName("ed_text")[2]
+        childhoodText.style.display = "none"
+        educationText.style.display = "none"
+        childhoodHeader.style.display = "none"
+        educationHeader.style.display = "none"
+        childhoodImg.style.display = "none"
+        educationImg.style.display = "none"
+        function showChildhood(){
+          childhoodButton.style.display = "none"
+          childhoodText.style.display = "inline"
+          childhoodHeader.style.display = "inline"
+          educationButton.style.display = "none"
+          childhoodImg.style.display = "inline"
+          educationDiv.style.border = "0px";
+        }
+        function showEducation(){
+          educationButton.style.display = "none"
+          educationText.style.display = "inline"
+          educationHeader.style.display = "inline"
+          childhoodButton.style.display = "none"
+          educationImg.style.display = "inline"
+          childhoodDiv.style.border = "0px";
+        }
+        function removeCh(){
+          childhoodButton.style.display = "inline"
+          childhoodText.style.display = "none"
+          childhoodHeader.style.display = "none"
+          educationButton.style.display = "inline"
+          childhoodImg.style.display = "none"
+          educationDiv.style.border = "1px solid black"
+        }
+        function removeEd(){
+          educationButton.style.display = "inline"
+          educationText.style.display = "none"
+          educationHeader.style.display = "none"
+          childhoodButton.style.display = "inline"
+          educationImg.style.display = "none"
+          childhoodDiv.style.border = "1px solid black"
+        }
+      </script>
+      <body>
+      </iframe>
