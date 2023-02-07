@@ -82,6 +82,8 @@
           </center>
             </div>
         </div>
+        <br>
+        <img src="katherineJohnsonmedal.png" id = "medal_img">
       <script>
         var childhoodDiv = document.getElementsByClassName("childhood_div")[0]
         var childhoodButton = document.getElementById("childhood")
@@ -101,6 +103,7 @@
         var workHeader = document.getElementsByClassName("work_text")[1]
         var workText = document.getElementsByClassName("work_text")[2]
         var workImg1 = document.getElementById("work_img")
+        var medalImg = document.getElementById("medal_img")
         childhoodText.style.display = "none"
         childhoodHeader.style.display = "none"
         childhoodImg.style.display = "none"
@@ -124,6 +127,7 @@
           educationDiv.style.display = "none"
           workDiv.style.display = "none"
           childhoodDiv.style.marginLeft = "35%"
+          medalImg.style.display = "none"
         }
         function showEducation(){
           educationButton.style.display = "none"
@@ -136,6 +140,7 @@
           childhoodDiv.style.display = "none"
           workDiv.style.display = "none"
           educationDiv.style.marginLeft = "35%"
+          medalImg.style.display = "none"
         }
         function showWork(){
           workButton.style.display = "none"
@@ -148,6 +153,7 @@
           childhoodDiv.style.display = "none"
           educationDiv.style.display = "none"
           workDiv.style.marginLeft = "35%"
+          medalImg.style.display = "none"
         }
         function removeCh(){
           childhoodButton.style.display = "inline"
@@ -160,6 +166,7 @@
           educationDiv.style.display = "inline"
           workDiv.style.display = "inline"
           childhoodDiv.style.marginLeft = "0%"
+          medalImg.style.display = "inline"
         }
         function removeEd(){
           educationButton.style.display = "inline"
@@ -172,6 +179,7 @@
           childhoodDiv.style.display = "inline"
           workDiv.style.display = "inline"
           educationDiv.style.marginLeft = "0%"
+            medalImg.style.display = "inline"
         }
         function removeWork(){
           workButton.style.display = "inline"
@@ -184,6 +192,7 @@
           childhoodDiv.style.display = "inline"
           educationDiv.style.display = "inline"
           workDiv.style.marginLeft = "0%"
+            medalImg.style.display = "inline"
         }
       </script>
     </body>
